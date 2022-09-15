@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                sh 'docker version'
+                sh 'docker info'
                 sh 'helm version'
             }
         }
